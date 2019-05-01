@@ -57,8 +57,9 @@ ModelImporter:
     400050: Zylinder
     2100000: Mat.5
     2100002: Mat.1
-    2100004: DachZelt
+    2100004: Zelt
     2100006: Mat
+    2100008: DachZelt
     2300000: Dachkugel
     2300002: Scheibe_1_0
     2300004: Scheibe_1_1
