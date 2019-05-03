@@ -2,21 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LillyShowObject : MonoBehaviour {
+public class LillyShowObject : MonoBehaviour
+{
 
     public ActivateLupe lupenObject;
     // private Renderer rends;
     private Renderer[] rends;
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         //renderer = GetComponent<Renderer>();
         Renderer[] rends = GetComponentsInChildren<Renderer>();
     }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
 
     private void OnMouseOver()
     {
@@ -29,7 +32,7 @@ public class LillyShowObject : MonoBehaviour {
                 r.enabled = true;
             }
         }
-        
+
     }
 
     private void OnMouseExit()
