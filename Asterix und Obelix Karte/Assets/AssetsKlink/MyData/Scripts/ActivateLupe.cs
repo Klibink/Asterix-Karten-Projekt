@@ -51,6 +51,6 @@ public class ActivateLupe : MonoBehaviour {
 
     public void MoveGlass()
     {
-        startMoving = !startMoving;
+        startMoving = !startMoving; //auf true gestzt
     }
 }
