@@ -6,7 +6,7 @@ public class LillyActivateLupe : MonoBehaviour {
 
     public Vector3 startPos;
     public bool startMoving = false;
-
+    public Player4 Player4Skript;
     public float distance = 1f;
     public bool useInitalCameraDistance = false;
     private float actualDistance;
@@ -33,15 +33,17 @@ public class LillyActivateLupe : MonoBehaviour {
          if (startMoving)
          {
             Cursor.visible = false;
+            Player4Skript.GameModeAsterix = false;
             //transform.position = Camera.main.ScreenToWorldPoint(new Vector3( Input.mousePosition.x,Input.mousePosition.y,-100));
             Vector3 mousePosition = Input.mousePosition;
             mousePosition.z = actualDistance;
-            transform.position = Camera.main.ScreenToWorldPoint(mousePosition);
+            transform.position = Camera.main.ScreenToWorldPoint(mousePosition);         
         }
         else
         {
             Cursor.visible = true;
             transform.position = startPos;
+            Player4Skript.GameModeAsterix = true;
         }
          
         
