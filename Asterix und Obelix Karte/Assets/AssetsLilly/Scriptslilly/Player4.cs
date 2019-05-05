@@ -27,6 +27,20 @@ public class Player4 : MonoBehaviour {
         //transform.Translate(movespeed * Input.GetAxis("Horizontal") * Time.deltaTime, 0f, movespeed * Input.GetAxis("Vertical") * Time.deltaTime); //for KeyboardInput
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);    //https://www.youtube.com/watch?v=GANwdCKoimU ** https://www.youtube.com/watch?v=kQiTRKMrl5s
         RaycastHit RayHit;                                              //https://docs.unity3d.com/Manual/nav-MoveToClickPoint.html 
+
+        if (running)
+        {
+            anim.SetBool("walk", true);
+            //anim.SetInteger("speed", 1);
+            Debug.Log("runBaby");
+        }
+
+        if (!running)
+        {
+            //anim.SetInteger("speed", 0);
+            anim.SetBool("walk", false);
+            Debug.Log("stopBaby");
+        }
         if (Input.GetMouseButtonDown(0)) //0=left;1=right;2=middle
         {
             if (Physics.Raycast(ray, out RayHit, Mathf.Infinity)) //100=max distance of Ray
@@ -39,24 +53,17 @@ public class Player4 : MonoBehaviour {
                 }    
                 //navAgent.destination = RayHit.point;
             }
-            if (navAgent.remainingDistance <= navAgent.stoppingDistance)
-            {
-                running = false;
-            }
-            else
-            {
-                running = true;
-            }
+        }
+        if (navAgent.remainingDistance <= navAgent.stoppingDistance)
+        {
+            running = false;
+        }
+        else
+        {
+            running = true;
+
         }
 
-        if (running)
-        {
-            anim.SetInteger("speed", 1);
-        }
 
-        if (!running)
-        {
-           anim.SetInteger("speed", 0);
-        }
     }
 }

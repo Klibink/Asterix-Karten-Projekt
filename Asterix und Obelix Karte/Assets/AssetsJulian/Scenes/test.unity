@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4465782, g: 0.49641252, b: 0.5748167, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -873,7 +873,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 872530253}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3fe6f6788f223d643a3abfd67379a95d, type: 3}
   m_Name: 
@@ -1730,6 +1730,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2300046, guid: 13fcfe8123b0e6a46ac2ee89f31dbe65, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2300002, guid: 13fcfe8123b0e6a46ac2ee89f31dbe65, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -1815,10 +1819,6 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2300044, guid: 13fcfe8123b0e6a46ac2ee89f31dbe65, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2300046, guid: 13fcfe8123b0e6a46ac2ee89f31dbe65, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
@@ -2079,26 +2079,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 400002, guid: 192ea46a97e2031438519cfd633becb3, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 192ea46a97e2031438519cfd633becb3, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 192ea46a97e2031438519cfd633becb3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 270
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 192ea46a97e2031438519cfd633becb3, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 192ea46a97e2031438519cfd633becb3, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -4
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 192ea46a97e2031438519cfd633becb3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.1
@@ -2151,6 +2131,34 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 13.962308
       objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: 192ea46a97e2031438519cfd633becb3, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 3bf8fcfa9f1137e40a1a8fe24091f3ad, type: 2}
+    - target: {fileID: 9500000, guid: 192ea46a97e2031438519cfd633becb3, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 192ea46a97e2031438519cfd633becb3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 192ea46a97e2031438519cfd633becb3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 192ea46a97e2031438519cfd633becb3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 192ea46a97e2031438519cfd633becb3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 192ea46a97e2031438519cfd633becb3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4
+      objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 192ea46a97e2031438519cfd633becb3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -2163,14 +2171,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: d9eb2efb8ce44f049acc8b37b7796ea0, type: 2}
-    - target: {fileID: 9500000, guid: 192ea46a97e2031438519cfd633becb3, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 3bf8fcfa9f1137e40a1a8fe24091f3ad, type: 2}
-    - target: {fileID: 9500000, guid: 192ea46a97e2031438519cfd633becb3, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 192ea46a97e2031438519cfd633becb3, type: 3}
 --- !u!1 &1741566851
