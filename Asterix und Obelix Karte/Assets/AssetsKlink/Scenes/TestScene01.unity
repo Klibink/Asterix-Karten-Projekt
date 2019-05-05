@@ -397,11 +397,15 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6.2262
       objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: 192ea46a97e2031438519cfd633becb3, type: 3}
+    - target: {fileID: 9500000, guid: 192ea46a97e2031438519cfd633becb3, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 3bf8fcfa9f1137e40a1a8fe24091f3ad, type: 2}
+    - target: {fileID: 2300002, guid: 192ea46a97e2031438519cfd633becb3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: d9eb2efb8ce44f049acc8b37b7796ea0, type: 2}
-    - target: {fileID: 2300002, guid: 192ea46a97e2031438519cfd633becb3, type: 3}
+    - target: {fileID: 2300000, guid: 192ea46a97e2031438519cfd633becb3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: d9eb2efb8ce44f049acc8b37b7796ea0, type: 2}
@@ -409,10 +413,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: d9eb2efb8ce44f049acc8b37b7796ea0, type: 2}
-    - target: {fileID: 9500000, guid: 192ea46a97e2031438519cfd633becb3, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 3bf8fcfa9f1137e40a1a8fe24091f3ad, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 192ea46a97e2031438519cfd633becb3, type: 3}
 --- !u!4 &1985397887 stripped
@@ -489,9 +489,9 @@ MonoBehaviour:
   _map: {fileID: 2068626078}
   _locations:
   - 50.83333, 6.9
-  - 54.428516, 10.37178
   - 50.94222, 6.95778
-  _spawnScale: 0.5
+  - 53.986283, 10.834973
+  _spawnScale: 5
   _markerPrefab: {fileID: 1839187062704024, guid: 9b5b1b761a8994c07affd0a05396633b,
     type: 3}
 --- !u!114 &2068626077
@@ -579,7 +579,7 @@ MonoBehaviour:
       modificationOptions:
         sampleCount: 10
         useRelativeHeight: 0
-        earthRadius: 100
+        earthRadius: 1000
       unityLayerOptions:
         addToLayer: 0
         layerId: 0
@@ -643,7 +643,7 @@ Transform:
   m_GameObject: {fileID: 2068626073}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -36.7, y: 20.2, z: -9.7}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
