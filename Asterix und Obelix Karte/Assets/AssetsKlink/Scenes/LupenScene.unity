@@ -722,7 +722,7 @@ GameObject:
   - component: {fileID: 573958376}
   - component: {fileID: 573958375}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: LupenCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

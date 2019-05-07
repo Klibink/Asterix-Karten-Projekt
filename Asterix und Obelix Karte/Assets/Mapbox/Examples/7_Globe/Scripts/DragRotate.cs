@@ -26,6 +26,9 @@
 					var dragDelta = Input.mousePosition - _startTouchPosition;
 					var axis = new Vector3(0f, -dragDelta.x * _multiplier, 0f);
 					_objectToRotate.RotateAround(_objectToRotate.position, axis, _multiplier);
+
+                    var axisZ = new Vector3(0f, 0f, -dragDelta.x * _multiplier);
+                    _objectToRotate.RotateAround(_objectToRotate.position, axisZ, _multiplier);
 				}
 			}
 		}
