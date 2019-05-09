@@ -4,15 +4,23 @@ using UnityEngine;
 
 public class ChangeSize : MonoBehaviour {
 
-    public Renderer rend;
-    private Vector3 startScale = new Vector3(1, 1, 1);
-    private Vector3 maxScale = new Vector3(2, 2, 2);
+    private Renderer rend;
+    private Vector3 startScale = new Vector3(0.2f, 0.2f, 0.2f);
+    private Vector3 maxScale = new Vector3(0.5f, 0.5f, 0.5f);
 
 
 
     // Use this for initialization
     void Start () {
-        rend = GetComponent<Renderer>();
+        if (transform.childCount == 0)
+        {
+            rend = transform.GetComponent<Renderer>();
+        }
+        else
+        {
+            rend = transform.GetChild(0).GetComponent<Renderer>();
+
+        }
         
 
 	}

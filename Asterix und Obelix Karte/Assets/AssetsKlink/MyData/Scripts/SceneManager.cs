@@ -25,24 +25,24 @@ namespace Mapbox.Examples
                 {
                     globus.GetComponent<DragRotate>().enabled = false;
 
-                    Debug.Log(0);
+                    //Debug.Log(0);
                 }
                 if (cameraControllerScript.zustand == zustaende.zus2)
                 {
                     globus.GetComponent<DragRotate>().enabled = false;
 
-                    Debug.Log(1);
+                    //Debug.Log(1);
                 }
                 if (cameraControllerScript.zustand == zustaende.zus3)
                 {
                     globus.GetComponent<SpawnOnGlobeExample>().enabled = true;
                     globus.GetComponent<DragRotate>().enabled = true;
 
-                    Debug.Log(2);
+                    //Debug.Log(2);
                 }
                 if (cameraControllerScript.zustand == zustaende.zus4)
                 {
-                    Debug.Log(3);
+                    //Debug.Log(3);
                 }
             }
         }
