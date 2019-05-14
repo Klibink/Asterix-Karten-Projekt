@@ -263,7 +263,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   sprite:
-  - {fileID: 21300000, guid: 0466de9dc63c18b4b949cb587c050a9f, type: 3}
+  - {fileID: 21300000, guid: cf77d58a63d91f342b5b132a890a7455, type: 3}
   defaultSprite: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
 --- !u!135 &6981158030151361875
 SphereCollider:
