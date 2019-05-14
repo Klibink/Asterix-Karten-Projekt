@@ -32,7 +32,7 @@ public class ActivateLupe : MonoBehaviour {
 
          if (startMoving)
          {
-            Cursor.visible = false;
+            //Cursor.visible = false;
             //transform.position = Camera.main.ScreenToWorldPoint(new Vector3( Input.mousePosition.x,Input.mousePosition.y,-100));
             Vector3 mousePosition = Input.mousePosition;
             mousePosition.z = actualDistance;

@@ -2,17 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum zustaende { zus1, zus2, zus3, zus4 }
+
 
 public class CameraControllerNeu : MonoBehaviour
 {
 
     
     public zustaende zustand;
-
+    public enum zustaende { zus1, zus2, zus3, zus4 }
     public Transform[] views;
     public float transitionSpeed;
-    Transform currentView;
+    public Transform currentView;
 
     void Start()
     {
@@ -21,7 +21,7 @@ public class CameraControllerNeu : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        /*if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             currentView = views[0];
             zustand = zustaende.zus1;
@@ -44,7 +44,25 @@ public class CameraControllerNeu : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha5))
         {
             currentView = views[4];
+        }*/
+
+        if (zustand == zustaende.zus1)
+        {
+            currentView = views[0];
         }
+        if (zustand == zustaende.zus2)
+        {
+            currentView = views[1];
+        }
+        if (zustand == zustaende.zus3)
+        {
+            currentView = views[2];
+        }
+        if (zustand == zustaende.zus4)
+        {
+            currentView = views[3];
+        }
+
     }
 
     private void LateUpdate()

@@ -8,6 +8,7 @@ namespace Mapbox.Examples
         public class SceneManager : MonoBehaviour
         {
             public GameObject sceneCamera;
+            public GameObject asterixObject;
             public GameObject globus;
             public CameraControllerNeu cameraControllerScript;
 
@@ -21,27 +22,33 @@ namespace Mapbox.Examples
             // Update is called once per frame
             void Update()
             {
-                if (cameraControllerScript.zustand == zustaende.zus1)
+                if (cameraControllerScript.zustand == CameraControllerNeu.zustaende.zus1) 
                 {
                     globus.GetComponent<DragRotate>().enabled = false;
+                    asterixObject.SetActive(false);
 
                     //Debug.Log(0);
                 }
-                if (cameraControllerScript.zustand == zustaende.zus2)
+                if (cameraControllerScript.zustand == CameraControllerNeu.zustaende.zus2)
                 {
                     globus.GetComponent<DragRotate>().enabled = false;
+                    asterixObject.SetActive(true);
+
 
                     //Debug.Log(1);
                 }
-                if (cameraControllerScript.zustand == zustaende.zus3)
+                if (cameraControllerScript.zustand == CameraControllerNeu.zustaende.zus3)
                 {
-                    globus.GetComponent<SpawnOnGlobeExample>().enabled = true;
-                    globus.GetComponent<DragRotate>().enabled = true;
+                    //globus.GetComponent<SpawnOnGlobeExample>().enabled = true;
+                    globus.GetComponent<DragRotate>().enabled = false;
+                    asterixObject.SetActive(false);
 
                     //Debug.Log(2);
                 }
-                if (cameraControllerScript.zustand == zustaende.zus4)
+                if (cameraControllerScript.zustand == CameraControllerNeu.zustaende.zus4)
                 {
+                    globus.GetComponent<SpawnOnGlobeExample>().enabled = true;
+                    globus.GetComponent<DragRotate>().enabled = true;
                     //Debug.Log(3);
                 }
             }
