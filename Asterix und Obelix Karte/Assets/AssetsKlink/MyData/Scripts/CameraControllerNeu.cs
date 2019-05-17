@@ -16,7 +16,7 @@ public class CameraControllerNeu : MonoBehaviour
 
     void Start()
     {
-        currentView = views[1];
+       // currentView = views[0];
     }
 
     void Update()
