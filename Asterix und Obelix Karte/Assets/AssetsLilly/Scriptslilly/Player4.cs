@@ -11,6 +11,7 @@ public class Player4 : MonoBehaviour {
 
     CharacterController controller;
     Animator anim;
+    public Inventory inventory;
 
     //private GameObject Object;
 
@@ -23,6 +24,14 @@ public class Player4 : MonoBehaviour {
 
 	}
 
+    private void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        IInventoryItem item = hit.collider.GetComponent<IInventoryItem>();
+        if (item != null)
+        {
+            inventory.AddItem(item);
+        }
+    }
     // Update is called once per frame
     void Update() {
         if (!GameModeAsterix)
@@ -37,14 +46,12 @@ public class Player4 : MonoBehaviour {
             {
                 anim.SetBool("walk", true);
                 //anim.SetInteger("speed", 1);
-                Debug.Log("runBaby");
             }
 
             if (!running)
             {
                 //anim.SetInteger("speed", 0);
                 anim.SetBool("walk", false);
-                Debug.Log("stopBaby");
             }
             if (Input.GetMouseButtonDown(0)) //0=left;1=right;2=middle
             {
