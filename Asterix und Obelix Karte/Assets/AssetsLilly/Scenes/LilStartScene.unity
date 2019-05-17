@@ -3289,7 +3289,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65a8683508338c646ab56ee0b256209e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneCamera: {fileID: 0}
+  sceneCamera: {fileID: 827063179}
+  asterixObject: {fileID: 124740811}
   globus: {fileID: 1416969467}
   cameraControllerScript: {fileID: 827063184}
 --- !u!1 &781316916 stripped
@@ -3437,6 +3438,7 @@ MonoBehaviour:
   - {fileID: 1807513237}
   - {fileID: 1726421150}
   transitionSpeed: 5
+  currentView: {fileID: 0}
 --- !u!1001 &870781432
 PrefabInstance:
   m_ObjectHideFlags: 0
