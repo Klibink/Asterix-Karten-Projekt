@@ -8,7 +8,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/AssetsKlink/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
+  - enabled: 0
     path: Assets/AssetsKlink/Scenes/StartScene.unity
     guid: d92ed681d211a2a4ab5e715ad51aea99
+  - enabled: 1
+    path: Assets/AssetsLilly/Scenes/Lil2StartScene.unity
+    guid: bcb131c68a6664c4781c8c573357c3d7
   m_configObjects: {}
