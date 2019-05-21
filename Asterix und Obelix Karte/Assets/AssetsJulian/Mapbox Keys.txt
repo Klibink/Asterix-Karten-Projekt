@@ -1,0 +1,2 @@
+Mapbox Token:  pk.eyJ1IjoiamtpZWYiLCJhIjoiY2pyd2hna3NmMGN2dDN5bzhsdXNqbjZ3NiJ9.24mgpn193xxJciS8iGyYrQ
+Map Style ID:  mapbox://styles/jkief/cjvshvnt40n1w1cmjzdytl55h
