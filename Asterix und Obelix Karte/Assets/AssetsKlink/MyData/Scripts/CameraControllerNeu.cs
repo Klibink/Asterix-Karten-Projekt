@@ -48,19 +48,19 @@ public class CameraControllerNeu : MonoBehaviour
 
         if (zustand == zustaende.zus1)
         {
-            currentView = views[0];
+            currentView = views[0]; //start
         }
         if (zustand == zustaende.zus2)
         {
-            currentView = views[1];
+            currentView = views[1]; //Asterix
         }
         if (zustand == zustaende.zus3)
         {
-            currentView = views[2];
+            currentView = views[2];//Lupe
         }
         if (zustand == zustaende.zus4)
         {
-            currentView = views[3];
+            currentView = views[3]; // Globe
         }
 
     }

@@ -24,7 +24,7 @@ namespace Mapbox.Examples
             // Update is called once per frame
             void Update()
             {
-                if (cameraControllerScript.zustand == CameraControllerNeu.zustaende.zus1)
+                if (cameraControllerScript.zustand == CameraControllerNeu.zustaende.zus1) //startView
                 {
                     globus.GetComponent<DragRotate>().enabled = false;
                     asterixObject.SetActive(false);
@@ -33,7 +33,7 @@ namespace Mapbox.Examples
 
                     //Debug.Log(0);
                 }
-                if (cameraControllerScript.zustand == CameraControllerNeu.zustaende.zus2)
+                if (cameraControllerScript.zustand == CameraControllerNeu.zustaende.zus2) //Asterix
                 {
                     globus.GetComponent<DragRotate>().enabled = false;
                     asterixObject.SetActive(true);
@@ -43,7 +43,7 @@ namespace Mapbox.Examples
 
                     //Debug.Log(1);
                 }
-                if (cameraControllerScript.zustand == CameraControllerNeu.zustaende.zus3)
+                if (cameraControllerScript.zustand == CameraControllerNeu.zustaende.zus3) // Lupe
                 {
                     //globus.GetComponent<SpawnOnGlobeExample>().enabled = true;
                     globus.GetComponent<DragRotate>().enabled = false;
@@ -53,7 +53,7 @@ namespace Mapbox.Examples
 
                     //Debug.Log(2);
                 }
-                if (cameraControllerScript.zustand == CameraControllerNeu.zustaende.zus4)
+                if (cameraControllerScript.zustand == CameraControllerNeu.zustaende.zus4) // Globus
                 {
                     globus.GetComponent<SpawnOnGlobeExample>().enabled = true;
                     globus.GetComponent<DragRotate>().enabled = true;

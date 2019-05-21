@@ -11,7 +11,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/AssetsKlink/Scenes/StartScene.unity
     guid: d92ed681d211a2a4ab5e715ad51aea99
-  - enabled: 1
+  - enabled: 0
     path: Assets/AssetsLilly/Scenes/Lil2StartScene.unity
     guid: bcb131c68a6664c4781c8c573357c3d7
+  - enabled: 1
+    path: Assets/AssetsLilly/Scenes/Lil3StartScene.unity
+    guid: 4a1dc4d249c311849944341331c197ac
   m_configObjects: {}
