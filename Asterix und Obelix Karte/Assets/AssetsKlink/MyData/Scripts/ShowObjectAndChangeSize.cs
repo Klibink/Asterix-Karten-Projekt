@@ -7,8 +7,8 @@ public class ShowObjectAndChangeSize : MonoBehaviour
     public GameObject go;
     private Renderer[] rend;
     private bool startGrowing = false;
-    private Vector3 startScale = new Vector3(0.5f, 0.5f, 0.5f);
-    private Vector3 maxScale = new Vector3(1f, 1f, 1f);
+    public Vector3 startScale;
+    public Vector3 maxScale;
 
     public ActivateLupe lupenObject;
     private Renderer renderer;
