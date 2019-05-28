@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Carpet pattern 04
+  m_Name: FussbodenHell
   m_Shader: {fileID: 4, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -20,15 +20,15 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: 6ed9537b3f7aec641bb4879bd538d51d, type: 3}
-        m_Scale: {x: 5, y: 5}
+        m_Texture: {fileID: 2800000, guid: 003dcb26b5c73f548b3eee54e3b24b78, type: 3}
+        m_Scale: {x: 5, y: 2}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: ee8391bdedb66474eaf358ba13fe15a8, type: 3}
-        m_Scale: {x: 5, y: 5}
+        m_Texture: {fileID: 2800000, guid: bb7716d533ec35649960e14e5e68cb69, type: 3}
+        m_Scale: {x: 5, y: 2}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _Shininess: 0.078125
+    - _Shininess: 0.1
     m_Colors:
-    - _Color: {r: 0.83137256, g: 0.83137256, b: 0.83137256, a: 1}
-    - _SpecColor: {r: 0.2509804, g: 0.2509804, b: 0.2509804, a: 1}
+    - _Color: {r: 0.6981132, g: 0.47319043, b: 0.4182093, a: 1}
+    - _SpecColor: {r: 0.11320752, g: 0.05927375, b: 0.05927375, a: 1}
