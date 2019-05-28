@@ -13,6 +13,7 @@ namespace Mapbox.Examples
             public GameObject MovePoints;
             public GameObject globus;
             public CameraControllerNeu cameraControllerScript;
+            public GameObject vexilium;
 
 
             // Start is called before the first frame update
@@ -50,6 +51,7 @@ namespace Mapbox.Examples
                     asterixObject.SetActive(false);
                     Collectables.SetActive(false);
                     MovePoints.SetActive(false);
+                    vexilium.SetActive(true);
 
                     //Debug.Log(2);
                 }
