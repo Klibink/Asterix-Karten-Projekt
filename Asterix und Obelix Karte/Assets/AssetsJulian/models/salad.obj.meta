@@ -1,57 +1,33 @@
 fileFormatVersion: 2
-guid: c255df3e58f359744a8775f3a4800b4b
+guid: 615d329a9b3caaf479d18e0b9ac2e91d
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Cube.007
-    100002: Cube.008
-    100004: Cube.009
-    100006: Cube.010
-    100008: Cube.011
-    100010: Cube.012
-    100012: Cube.013
-    100014: Cube.014
-    100016: //RootNode
-    400000: Cube.007
-    400002: Cube.008
-    400004: Cube.009
-    400006: Cube.010
-    400008: Cube.011
-    400010: Cube.012
-    400012: Cube.013
-    400014: Cube.014
-    400016: //RootNode
-    2100000: Sausages
-    2300000: Cube.007
-    2300002: Cube.008
-    2300004: Cube.009
-    2300006: Cube.010
-    2300008: Cube.011
-    2300010: Cube.012
-    2300012: Cube.013
-    2300014: Cube.014
-    3300000: Cube.007
-    3300002: Cube.008
-    3300004: Cube.009
-    3300006: Cube.010
-    3300008: Cube.011
-    3300010: Cube.012
-    3300012: Cube.013
-    3300014: Cube.014
-    4300000: Cube.007
-    4300002: Cube.008
-    4300004: Cube.009
-    4300006: Cube.010
-    4300008: Cube.011
-    4300010: Cube.012
-    4300012: Cube.013
-    4300014: Cube.014
+    100000: cup
+    100002: //RootNode
+    100004: Sphere001
+    400000: cup
+    400002: //RootNode
+    400004: Sphere001
+    2100000: 10315_soup_plate
+    2100002: Material__59
+    2300000: cup
+    2300002: Sphere001
+    3300000: cup
+    3300002: Sphere001
+    4300000: cup
+    4300002: Sphere001
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Sausages
-    second: {fileID: 2100000, guid: b21fe8a3ddd702d499a8c8ae1b904e73, type: 2}
+      name: 10315_soup_plate
+    second: {fileID: 2100000, guid: 853ea1dd4e351044cb5e86ec7100584a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material__59
+    second: {fileID: 2100000, guid: a2e963086bb1e3545987e0d7a60a3447, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

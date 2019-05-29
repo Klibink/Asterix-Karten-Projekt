@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657964, g: 0.49641418, b: 0.57481706, a: 1}
+  m_IndirectSpecularColor: {r: 0.4465791, g: 0.49641365, b: 0.5748162, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3027,6 +3027,7 @@ MonoBehaviour:
   MovePoints: {fileID: 2672786892871769454}
   globus: {fileID: 1416969467}
   cameraControllerScript: {fileID: 827063184}
+  vexilium: {fileID: 0}
 --- !u!1001 &773952339
 PrefabInstance:
   m_ObjectHideFlags: 0
