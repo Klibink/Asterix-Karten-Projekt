@@ -1105,7 +1105,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &54856186
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7433,6 +7433,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 6e9648194a310ba4f9db95a31a55299e, type: 3}
       propertyPath: m_Name
       value: magnifying glass
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 6e9648194a310ba4f9db95a31a55299e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6e9648194a310ba4f9db95a31a55299e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18109,6 +18113,10 @@ MonoBehaviour:
   globus: {fileID: 207310850}
   cameraControllerScript: {fileID: 2086818719}
   vexilium: {fileID: 918411344}
+  standardAnsicht: {fileID: 54856185}
+  asterixUI: {fileID: 1755740529}
+  lupeUI: {fileID: 536379659}
+  globusUI: {fileID: 2088268254}
 --- !u!4 &1433772946
 Transform:
   m_ObjectHideFlags: 0
@@ -21892,6 +21900,10 @@ PrefabInstance:
     - target: {fileID: 100002, guid: f5a0565eebae0cc4982e57997038a290, type: 3}
       propertyPath: m_Name
       value: AsterixLowOnlyOldFBX@AirIdle
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: f5a0565eebae0cc4982e57997038a290, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: f5a0565eebae0cc4982e57997038a290, type: 3}
       propertyPath: m_LocalPosition.x
@@ -27170,7 +27182,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2088268255
 RectTransform:
   m_ObjectHideFlags: 0

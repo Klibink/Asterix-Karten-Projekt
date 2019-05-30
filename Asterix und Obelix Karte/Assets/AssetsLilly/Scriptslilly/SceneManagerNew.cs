@@ -15,6 +15,13 @@ namespace Mapbox.Examples
             public CameraControllerNeu cameraControllerScript;
             public GameObject vexilium;
 
+            private float myTime = 0f;
+            public GameObject standardAnsicht;
+            public GameObject asterixUI;
+            public GameObject lupeUI;
+            public GameObject globusUI;
+
+
 
             // Start is called before the first frame update
             void Start()
@@ -61,6 +68,17 @@ namespace Mapbox.Examples
                     globus.GetComponent<DragRotate>().enabled = true;
                     //Debug.Log(3);
                 }
+
+                myTime += Time.deltaTime;
+
+                if(myTime > 6f)
+                {
+                    standardAnsicht.SetActive(true);
+                    asterixUI.SetActive(true);
+                    lupeUI.SetActive(true);
+                    globusUI.SetActive(true);
+                }
+
             }
         }
     }

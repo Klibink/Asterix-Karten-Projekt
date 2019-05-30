@@ -11,6 +11,8 @@ ModelImporter:
     400004: Sphere001
     2100000: 10315_soup_plate
     2100002: Material__59
+    2100004: cupMat
+    2100006: Sphere001Mat
     2300000: cup
     2300002: Sphere001
     3300000: cup
