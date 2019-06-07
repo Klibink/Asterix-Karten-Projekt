@@ -4,11 +4,19 @@ using UnityEngine;
 
 public class PickupItem : MonoBehaviour, IInventoryItem
 {
+    private CounterCollect CounterScript;
+    public GameObject ScriptHolder;
+
+    void Start()
+    {
+        CounterScript = ScriptHolder.GetComponent<CounterCollect>();
+    }
     public string Name
     {
         get
         {
-            return "PickUpItem";
+            // return "PickUpItem";
+            return this.name;
         }
     }
 
@@ -23,6 +31,9 @@ public class PickupItem : MonoBehaviour, IInventoryItem
     }
     public void OnPickup()
     {
+        CounterScript.items.Add(-5);
         gameObject.SetActive(false);
+        //CounterScript.itemnames.Add(Name);
+        Debug.Log(Name);
     }
 }

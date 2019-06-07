@@ -7,10 +7,12 @@ using UnityEngine.UI;
 public class PanelAppear : MonoBehaviour
 {
     public SpriteRenderer Panel;
+    private CounterCollect CounterScript;
+    public GameObject ScriptHolder;
     // Start is called before the first frame update
     void Start()
     {
-        
+        CounterScript = ScriptHolder.GetComponent<CounterCollect>();
     }
 
     // Update is called once per frame
@@ -39,6 +41,7 @@ public class PanelAppear : MonoBehaviour
             //  if (Panel != null)
             //   {
             Panel.enabled = false;
+            CounterScript.counter();
             //   }     
         }
     }
