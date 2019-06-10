@@ -28,5 +28,12 @@ public class HUD : MonoBehaviour
             }
         }
     }
+    public void Schimmel(int i, Sprite schimmelPic) 
+    {
+        Transform inventory = transform.Find("Inventory");
+        Image image = inventory.GetChild(i).GetChild(0).GetChild(0).GetComponent<Image>();
+        image.sprite = schimmelPic;
+        //Image image = inventory.GetChild(0).GetChild(i).getComponent<Image>();
+    }
 
 }

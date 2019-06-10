@@ -8,6 +8,7 @@ public class Inventory : MonoBehaviour
     private const int SLOTS = 9;
     private List<IInventoryItem> mItems = new List<IInventoryItem>();
     public event EventHandler<InventoryEventArgs> ItemAdded;
+    public event EventHandler<InventoryEventArgs> ItemSchimmel;
 
     public void AddItem(IInventoryItem item)
     {
@@ -28,4 +29,11 @@ public class Inventory : MonoBehaviour
         }
         
     }
+
+    /*public void SchimmelItem(IInventoryItem item)
+    {
+        ItemSchimmel(this, new InventoryEventArgs(item));
+
+
+    }*/
 }

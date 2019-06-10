@@ -5,8 +5,8 @@ using UnityEngine;
 public class CounterCollect : MonoBehaviour
 {
     private float counterMovePoints;
-    private float counterItem1;
-    public bool Item1=false;
+    //private float counterItem1;
+    /*public bool Item1=false;
     public bool Item2 = false;
     public bool Item3 = false;
     public bool Item4 = false;
@@ -14,15 +14,19 @@ public class CounterCollect : MonoBehaviour
     public bool Item6 = false;
     public bool Item7 = false;
     public bool Item8 = false;
-    public bool Item9 = false;
+    public bool Item9 = false;*/
     public List<int> items = new List<int>();
-    public List<string> itemnames = new List<string>();
+    public List<Sprite> Schimmelpics = new List<Sprite>();
+
+    private HUD HudScript;
+    public GameObject ScriptHolder;
 
     // Start is called before the first frame update
     void Start()
     {
+        HudScript = ScriptHolder.GetComponent<HUD>();
         counterMovePoints = 0;
-        counterItem1 = -5;
+        //counterItem1 = -5;
         //items[0] = 0;
     }
 
@@ -46,7 +50,7 @@ public class CounterCollect : MonoBehaviour
                 }
                 else if (items[i] >= -1)
                 {
-
+                    HudScript.Schimmel(i, Schimmelpics[i]);
                     //Debug.Log("Item" + i + "Verfault");
                 }
 

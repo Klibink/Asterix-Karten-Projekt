@@ -21,6 +21,7 @@ public class PickupItem : MonoBehaviour, IInventoryItem
     }
 
     public Sprite _Image =null;
+    public Sprite _ImageSchimmel =null;
 
     public Sprite Image
     {
@@ -29,9 +30,19 @@ public class PickupItem : MonoBehaviour, IInventoryItem
             return _Image;
         }
     }
+
+    public Sprite ImageSchimmel
+    {
+        get
+        {
+            return _ImageSchimmel;
+        }
+    }
+
     public void OnPickup()
     {
         CounterScript.items.Add(-5);
+        CounterScript.Schimmelpics.Add(_ImageSchimmel);
         gameObject.SetActive(false);
         //CounterScript.itemnames.Add(Name);
         Debug.Log(Name);
