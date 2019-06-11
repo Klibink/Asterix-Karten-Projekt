@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 namespace Mapbox.Examples
 {
     namespace Scripts.Utilities
@@ -15,6 +16,7 @@ namespace Mapbox.Examples
             public CameraControllerNeu cameraControllerScript;
             public GameObject vexilium;
             public GameObject gallDorf;
+            public TextMeshProUGUI text;
 
             private float myTime = 0f;
             public GameObject standardAnsicht;
@@ -40,6 +42,7 @@ namespace Mapbox.Examples
                     Collectables.SetActive(false);
                     MovePoints.SetActive(false);
                     gallDorf.SetActive(false);
+                    text.text = "";
                     //Debug.Log(0);
                 }
                 if (cameraControllerScript.zustand == CameraControllerNeu.zustaende.zus2) //Asterix
@@ -61,6 +64,7 @@ namespace Mapbox.Examples
                     MovePoints.SetActive(false);
                     vexilium.SetActive(true);
                     gallDorf.SetActive(true);
+                    text.text = "";
 
                     //Debug.Log(2);
                 }
@@ -68,6 +72,7 @@ namespace Mapbox.Examples
                 {
                     globus.GetComponent<SpawnOnGlobeExample>().enabled = true;
                     globus.GetComponent<DragRotate>().enabled = true;
+                    text.text = "";
                     //Debug.Log(3);
                 }
 
