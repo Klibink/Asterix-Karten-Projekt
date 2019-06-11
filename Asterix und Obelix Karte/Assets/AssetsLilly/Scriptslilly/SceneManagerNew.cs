@@ -14,6 +14,7 @@ namespace Mapbox.Examples
             public GameObject globus;
             public CameraControllerNeu cameraControllerScript;
             public GameObject vexilium;
+            public GameObject gallDorf;
 
             private float myTime = 0f;
             public GameObject standardAnsicht;
@@ -38,7 +39,7 @@ namespace Mapbox.Examples
                     asterixObject.SetActive(false);
                     Collectables.SetActive(false);
                     MovePoints.SetActive(false);
-
+                    gallDorf.SetActive(false);
                     //Debug.Log(0);
                 }
                 if (cameraControllerScript.zustand == CameraControllerNeu.zustaende.zus2) //Asterix
@@ -47,7 +48,7 @@ namespace Mapbox.Examples
                     asterixObject.SetActive(true);
                     Collectables.SetActive(true);
                     MovePoints.SetActive(true);
-
+                    gallDorf.SetActive(false);
 
                     //Debug.Log(1);
                 }
@@ -59,6 +60,7 @@ namespace Mapbox.Examples
                     Collectables.SetActive(false);
                     MovePoints.SetActive(false);
                     vexilium.SetActive(true);
+                    gallDorf.SetActive(true);
 
                     //Debug.Log(2);
                 }
