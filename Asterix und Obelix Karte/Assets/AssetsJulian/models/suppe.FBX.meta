@@ -11,12 +11,17 @@ ModelImporter:
     400004: //RootNode
     2100000: 10315_soup_plate
     2100002: 'Material #59'
+    2100004: 'Material #60'
+    2100006: 'Material #61'
     2300000: cup
     2300002: soup
+    2300004: //RootNode
     3300000: cup
     3300002: soup
+    3300004: //RootNode
     4300000: cup
     4300002: soup
+    4300004: Sphere001
   externalObjects:
   - first:
       type: UnityEngine:Material

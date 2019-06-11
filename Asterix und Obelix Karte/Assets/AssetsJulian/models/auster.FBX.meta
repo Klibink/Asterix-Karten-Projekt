@@ -4,35 +4,23 @@ ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Cylinder001
-    100004: shell1
-    100006: shell2
     400000: //RootNode
-    400002: Cylinder001
-    400004: shell1
-    400006: shell2
-    2100000: 'Material #27'
-    2100002: 'Material #28'
-    2300000: Cylinder001
-    2300002: shell1
-    2300004: shell2
-    3300000: Cylinder001
-    3300002: shell1
-    3300004: shell2
-    4300000: shell1
-    4300002: shell2
-    4300004: Cylinder001
+    2100000: 'Material #28'
+    2100002: 'Material #27'
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Cylinder001
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: 'Material #27'
-    second: {fileID: 2100000, guid: 8b16f5bc053a3684db7f02bd482d90b0, type: 2}
+    second: {fileID: 2100000, guid: ca420b21bb5aebe489f004bbf28026c8, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: 'Material #28'
-    second: {fileID: 2100000, guid: 2656927512e51974faf1e7187259293f, type: 2}
+    second: {fileID: 2100000, guid: 76de690d03d2e5b48ae4311c80b3943b, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
