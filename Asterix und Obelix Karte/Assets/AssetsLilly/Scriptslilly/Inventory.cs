@@ -30,6 +30,11 @@ public class Inventory : MonoBehaviour
         
     }
 
+    public int returnItemCout()
+    {
+        return mItems.Count;
+    }
+
     /*public void SchimmelItem(IInventoryItem item)
     {
         ItemSchimmel(this, new InventoryEventArgs(item));

@@ -9,7 +9,10 @@ public class PanelAppear : MonoBehaviour
 {
     public SpriteRenderer Panel;
     private CounterCollect CounterScript;
+    private Inventory InventarScript;
     public GameObject ScriptHolder;
+    public GameObject ScriptHolderInv;
+    public GameObject LastPoint;
     public string cityName;
     public TextMeshProUGUI text;
     // Start is called before the first frame update
@@ -17,6 +20,7 @@ public class PanelAppear : MonoBehaviour
     {
        
         CounterScript = ScriptHolder.GetComponent<CounterCollect>();
+        InventarScript = ScriptHolderInv.GetComponent<Inventory>();
     }
 
     // Update is called once per frame
@@ -30,10 +34,16 @@ public class PanelAppear : MonoBehaviour
         if (other.tag == "Player")
         {
             Debug.Log(other.tag);
-            //  if (Panel != null)
-            //   {
             Panel.enabled = true;
-         //   }     
+            //Debug.Log(InventarScript.returnItemCout());
+            if (InventarScript.returnItemCout()==6) // Test, in FullVersion auf 9 ändern
+            {
+                //Debug.Log("done");
+                if (LastPoint.activeSelf ==false)
+                {
+                    LastPoint.SetActive(true);
+                }
+            }
         }
     }
     private void OnTriggerExit(Collider other)
