@@ -36,7 +36,7 @@ public class PanelAppear : MonoBehaviour
             Debug.Log(other.tag);
             Panel.enabled = true;
             //Debug.Log(InventarScript.returnItemCout());
-            if (InventarScript.returnItemCout()==6) // Test, in FullVersion auf 9 ändern
+            if (InventarScript.returnItemCount()==7) // Test, in FullVersion auf 9 ändern
             {
                 //Debug.Log("done");
                 if (LastPoint.activeSelf ==false)

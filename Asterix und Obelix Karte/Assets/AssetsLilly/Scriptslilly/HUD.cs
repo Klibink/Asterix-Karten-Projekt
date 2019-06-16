@@ -36,4 +36,11 @@ public class HUD : MonoBehaviour
         //Image image = inventory.GetChild(0).GetChild(i).getComponent<Image>();
     }
 
+    public void Empty(int i)
+    {
+        Transform inventory = transform.Find("Inventory");
+        Image image = inventory.GetChild(i).GetChild(0).GetChild(0).GetComponent<Image>();
+        image.enabled=false;
+    }
+
 }

@@ -30,7 +30,7 @@ public class Inventory : MonoBehaviour
         
     }
 
-    public int returnItemCout()
+    public int returnItemCount()
     {
         return mItems.Count;
     }

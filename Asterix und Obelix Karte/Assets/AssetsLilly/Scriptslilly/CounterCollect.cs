@@ -31,7 +31,7 @@ public class CounterCollect : MonoBehaviour
         {
             for (int i = 0; i < items.Count; i++)
             {
-                if (items[i] <= -1)
+                if (items[i] <= -1) //Items ist eine Int Liste! Hier ist der Zähler, der runterzählt bis Schimmel
                 {
                     items[i] += 1;
                     //Debug.Log("item"+i+":"+items[i]);
