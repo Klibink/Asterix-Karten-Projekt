@@ -10,7 +10,6 @@ public class EmptyInventoryImages : MonoBehaviour
     public GameObject ScriptHolderINV;
     private float Timer;
     private bool trigger=false;
-    private int i = 8; //zu löschendes Bild
     private int Itemzahl;
 
     private void Start()
