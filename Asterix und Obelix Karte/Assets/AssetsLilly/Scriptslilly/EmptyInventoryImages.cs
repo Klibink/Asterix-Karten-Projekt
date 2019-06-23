@@ -29,7 +29,7 @@ public class EmptyInventoryImages : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            Itemzahl = Inventar.returnItemCount()-1;
+            Itemzahl = Inventar.returnItemCount()-1; //How many Objects are still in Inventory?
             trigger = true;
         }
     }
@@ -50,7 +50,7 @@ public class EmptyInventoryImages : MonoBehaviour
         {
             if (Timer <= 0 && Itemzahl >= 0)
             {
-                HudScript.Empty(Itemzahl);
+                HudScript.Empty(Itemzahl); //If Objects: For all Objects, after Timer, delete current Object
                 Timer = 2f;
                 Itemzahl--;
             }

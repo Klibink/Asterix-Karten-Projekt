@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// Object grows in size after it has been reactivated
+
 public class LillyChangeSize : MonoBehaviour {
 
     //public Renderer rend;

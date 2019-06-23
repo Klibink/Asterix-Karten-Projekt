@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 namespace Mapbox.Examples
-{
+{    //Skript Manages Scenes in Game, so you can swap in between the different GameModes over the Menue
     namespace Scripts.Utilities
     {
         public class SceneManagerNew : MonoBehaviour
@@ -78,7 +78,7 @@ namespace Mapbox.Examples
 
                 myTime += Time.deltaTime;
 
-                if(myTime > 6f)
+                if(myTime > 6f)   //MenueTimer
                 {
                     standardAnsicht.SetActive(true);
                     asterixUI.SetActive(true);

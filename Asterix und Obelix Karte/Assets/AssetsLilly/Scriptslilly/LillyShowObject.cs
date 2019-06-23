@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+// If Lupe hits Collider of invisible object, Object becomes visible and triggers the grow skript
 
 public class LillyShowObject : MonoBehaviour
 {

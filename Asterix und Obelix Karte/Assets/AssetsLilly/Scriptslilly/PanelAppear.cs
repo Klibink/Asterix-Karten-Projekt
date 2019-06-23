@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
+// PanelsObjects are set to Active when Player collides with the DestinationPoints on Map. Each Point has an Image Attribut, that is already set to the correct PanelSprite
+//when all objects have been collected from the DestinationPoints, the home-DestinationPoint is made visible (
 
 public class PanelAppear : MonoBehaviour
 {
@@ -33,10 +35,10 @@ public class PanelAppear : MonoBehaviour
         text.text= cityName;
         if (other.tag == "Player")
         {
-            Debug.Log(other.tag);
+            //Debug.Log(other.tag);
             Panel.enabled = true;
             //Debug.Log(InventarScript.returnItemCout());
-            if (InventarScript.returnItemCount()==9) // Test, in FullVersion auf 9 ändern
+            if (InventarScript.returnItemCount()==9) //activate HomePoint
             {
                 //Debug.Log("done");
                 if (LastPoint.activeSelf ==false)

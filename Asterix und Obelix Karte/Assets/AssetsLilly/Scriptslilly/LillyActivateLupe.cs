@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Lupe and all connected functions only become active and usable after you click on the MenueOption
+
 public class LillyActivateLupe : MonoBehaviour {
 
     public Vector3 startPos;

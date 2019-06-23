@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+// Inventory Items controller
 public class Inventory : MonoBehaviour
 {
     private const int SLOTS = 9;

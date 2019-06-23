@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+// StartCamera for AnimationBeginning, Trigger for BookOpening-Animation
 public class LillyCam : MonoBehaviour
 {
     private float Timer = 4.9f;

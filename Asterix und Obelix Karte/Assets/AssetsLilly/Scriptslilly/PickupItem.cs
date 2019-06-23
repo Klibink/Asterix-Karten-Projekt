@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// Skript that is part of all COllectible Items. 
+// Adds an int to the CounterCollect list, so ItemImages can Change their Image over time (RottenEffect)
+
 public class PickupItem : MonoBehaviour, IInventoryItem
 {
     private CounterCollect CounterScript;

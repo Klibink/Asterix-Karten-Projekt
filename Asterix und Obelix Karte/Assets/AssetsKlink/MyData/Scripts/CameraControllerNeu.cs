@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
+// Controls Camera Perspective depending on the scenes (cooperating with SceneManager)
 
 public class CameraControllerNeu : MonoBehaviour
 {

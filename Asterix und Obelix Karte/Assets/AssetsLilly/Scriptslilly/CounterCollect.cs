@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// Counts down for each Object that is put into Intems List, when timer Reaches 0 The Schimmel() function in the HUD is activated (-> Replaces Pic with RottenPic)
+
 public class CounterCollect : MonoBehaviour
 {
     private float counterMovePoints;

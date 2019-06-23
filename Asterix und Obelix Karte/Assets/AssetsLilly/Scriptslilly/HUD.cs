@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+// HuDScript controlls Inventory Items
 public class HUD : MonoBehaviour
 {
     public Inventory Inventory;
@@ -28,7 +28,7 @@ public class HUD : MonoBehaviour
             }
         }
     }
-    public void Schimmel(int i, Sprite schimmelPic) 
+    public void Schimmel(int i, Sprite schimmelPic) //Changes InventoryObject Pics to RottenPics
     {
         Transform inventory = transform.Find("Inventory");
         Image image = inventory.GetChild(i).GetChild(0).GetChild(0).GetComponent<Image>();
@@ -36,7 +36,7 @@ public class HUD : MonoBehaviour
         //Image image = inventory.GetChild(0).GetChild(i).getComponent<Image>();
     }
 
-    public void Empty(int i)
+    public void Empty(int i)  //delete InventoryObjects
     {
         Transform inventory = transform.Find("Inventory");
         Image image = inventory.GetChild(i).GetChild(0).GetChild(0).GetComponent<Image>();

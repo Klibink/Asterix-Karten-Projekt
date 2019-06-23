@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-
+// Skript handles Player Movement over Unitys NavAgent functions
+// onClick on clickable Objects, the Player moves to the Destination of where the Raypoint hit the Clickable Objects
+// PlayerAnimations change depeding on State of Player ( standing/moving)
 public class Player4 : MonoBehaviour {
     public bool GameModeAsterix;
     public float movespeed;
