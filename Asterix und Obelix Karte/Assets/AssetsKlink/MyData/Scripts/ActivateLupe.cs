@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Sorgt dafür, dass das Lupen-Objekt dem Mouse-Cursor folgt
 public class ActivateLupe : MonoBehaviour {
 
     public Vector3 startPos;
@@ -32,8 +33,7 @@ public class ActivateLupe : MonoBehaviour {
 
          if (startMoving)
          {
-            //Cursor.visible = false;
-            //transform.position = Camera.main.ScreenToWorldPoint(new Vector3( Input.mousePosition.x,Input.mousePosition.y,-100));
+            
             Vector3 mousePosition = Input.mousePosition;
             mousePosition.z = actualDistance;
             transform.position = Camera.main.ScreenToWorldPoint(mousePosition);
@@ -51,6 +51,6 @@ public class ActivateLupe : MonoBehaviour {
 
     public void MoveGlass()
     {
-        startMoving = !startMoving; //auf true gestzt
+        startMoving = !startMoving; //Wechsel von true auf false und umgekehrt
     }
 }

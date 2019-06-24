@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// De- bzw. aktiviert den MeshRenderer einzelner GameObjekte, damit diese in Szene sichtbar werden, wenn das LupenObjekt über dem gewünschten Objekt hovert
 public class ShowObject : MonoBehaviour {
 
     public ActivateLupe lupenObject;
@@ -27,6 +28,7 @@ public class ShowObject : MonoBehaviour {
 		
 	}
 
+    //For-Loop, der die MeshRenderer aller ChildObjekte(sofern vorhanden) aktiviert
     private void OnMouseOver()
     {
         if (hasChild && lupenObject.startMoving)
@@ -51,6 +53,7 @@ public class ShowObject : MonoBehaviour {
         Debug.Log("Test");
     }
 
+    //For-Loop, der die MeshRenderer aller ChildObjekte(sofern vorhanden) deaktiviert
     private void OnMouseExit()
     {
         if(hasChild && lupenObject.startMoving)

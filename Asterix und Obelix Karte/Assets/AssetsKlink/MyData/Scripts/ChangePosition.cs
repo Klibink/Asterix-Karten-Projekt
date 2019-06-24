@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Script um Objekte von Punkt A nach Punkt B zu bewegen
 public class ChangePosition : MonoBehaviour
 {
     public Transform target;

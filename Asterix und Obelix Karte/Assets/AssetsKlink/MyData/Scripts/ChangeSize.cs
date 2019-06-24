@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Verändert Größe eines GameObjects
 public class ChangeSize : MonoBehaviour {
 
     private Renderer rend;
-    private Vector3 startScale = new Vector3(0.2f, 0.2f, 0.2f);
-    private Vector3 maxScale = new Vector3(0.5f, 0.5f, 0.5f);
+    private Vector3 startScale = new Vector3(0.2f, 0.2f, 0.2f);//Anfangsscale des Object
+    private Vector3 maxScale = new Vector3(0.5f, 0.5f, 0.5f);//Endscale des Object
 
 
 
@@ -30,9 +31,9 @@ public class ChangeSize : MonoBehaviour {
 
         if (rend.enabled)
         {
-            //if(transform.lossyScale!=maxScale) { 
+            
             StartCoroutine(startGrow());
-            //}
+            
         }
         else
         {
@@ -41,15 +42,15 @@ public class ChangeSize : MonoBehaviour {
         }
 
 	}
-
+    //Coroutine, die nach 0.8f Sekunden die oder das gewünschte Gameobject vergrößert
     IEnumerator startGrow()
     {
-        //transitionAnim.SetTrigger("end");
+        
         yield return new WaitForSeconds(0.8f);
         if (transform.lossyScale != maxScale)
         {
             transform.localScale += new Vector3(0.1F, 0.1f, 0.1f);
         }
-        //SceneManager.LoadScene(nextScene);
+        
     }
 }

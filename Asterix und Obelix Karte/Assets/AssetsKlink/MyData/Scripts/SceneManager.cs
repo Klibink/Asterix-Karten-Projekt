@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
+//Mapbox namespace benötigt, um auf Mapbox Scripte und Variablen zugreifen zu können
 namespace Mapbox.Examples
 {
     namespace Scripts.Utilities
     {
+        //Managet einzelne Szenen Komponenten und de- bzw. aktiviert einzelne GameObject Komponenten abhängig vom Zustand
         public class SceneManager : MonoBehaviour
         {
             public GameObject sceneCamera;

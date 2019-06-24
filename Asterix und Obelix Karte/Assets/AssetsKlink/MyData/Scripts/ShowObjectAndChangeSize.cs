@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Aktiviert den MeshRenderer und vergrößert daraufhin die gewünschten GameObjekte
 public class ShowObjectAndChangeSize : MonoBehaviour
 {
     public GameObject go;
@@ -16,6 +17,7 @@ public class ShowObjectAndChangeSize : MonoBehaviour
 
 
     // Use this for initialization
+    //Speichert alle Child Renderer in Array
     void Start()
     {
         rend = GetComponentsInChildren<Renderer>();
@@ -39,7 +41,7 @@ public class ShowObjectAndChangeSize : MonoBehaviour
         }
 
     }
-
+    //Erhöht den localScale des oder der gewünschten GameObjekte
     IEnumerator startGrow()
     {
         //transitionAnim.SetTrigger("end");
@@ -51,6 +53,7 @@ public class ShowObjectAndChangeSize : MonoBehaviour
         //SceneManager.LoadScene(nextScene);
     }
 
+    //setzt alle Renderer in dem gespeicherten Render-Array auf "true"
     private void OnMouseOver()
     {
         if (lupenObject.startMoving)
@@ -85,6 +88,7 @@ public class ShowObjectAndChangeSize : MonoBehaviour
         Debug.Log("Test");
     }
 
+    //setzt alle Renderer in dem gespeicherten Render-Array auf "false"
     private void OnMouseExit()
     {
         foreach (Renderer r in rend)
